@@ -23,8 +23,8 @@ node {
         // Obtain an Artifactory server instance, defined in Jenkins --> Manage..:
          
         rtMaven.tool = 'Maven-3.6.1' // Tool name from Jenkins configuration
-        rtMaven.deployer releaseRepo: 'libs-release-local', snapshotRepo: 'libs-snapshot-local', server: server
-        rtMaven.resolver releaseRepo: 'libs-release', snapshotRepo: 'libs-snapshot', server: server
+        rtMaven.deployer releaseRepo: 'ajitkatta-artifactory-primary-0-releases-local', snapshotRepo: 'ajitkatta-artifactory-primary-0-snapshots-local', server: server
+        rtMaven.resolver releaseRepo: 'ajitkatta-artifactory-primary-0-releases', snapshotRepo: 'ajitkatta-artifactory-primary-0-snapshots', server: server
         rtMaven.deployer.deployArtifacts = false // Disable artifacts deployment during Maven run
      }
             
